@@ -56,7 +56,11 @@
                   "maximumError": "5mb"
                 }
               ]
-            }
+            },
+
+          "es5": {
+            "tsConfig": "./tsconfig-es5.app.json"
+          }
           }
         },
         "serve": {
@@ -67,6 +71,9 @@
           "configurations": {
             "production": {
               "browserTarget": "sample-ngx:build:production"
+            },
+            "es5": {
+              "browserTarget": "sample-ngx:build:es5"
             }
           }
         },
